@@ -104,17 +104,106 @@ public class App {
         double lado = sc.nextDouble();
         Double Resultado = (lado * lado);
         System.out.println("El área del cuadrado es: " + Resultado);
-*/
+        
+
         Scanner sc = new Scanner(System.in);
 
         System.out.println("¿Cuántos años tienes?: ");
         int edad = sc.nextInt();
+        
+        String mensaje = (edad >= 18) ? "Mayor de edad" : "Menor de edad";
+        System.out.println(mensaje);
+        
+        Scanner sc = new Scanner(System.in);
 
-        if (edad >= 18) {
-            System.out.println("Puedes pasar");
-        } else {
-            System.out.println("No puedes pasar");
-            sc.close();
+        System.out.println("¿Número de día?: ");
+        int dia = sc.nextInt();
+        String diaSemana;
+        switch (dia) {
+            case 1:
+                diaSemana = "Lunes";
+                break;
+            case 2:
+                diaSemana = "Martes";
+                break;  
+            case 3:
+                diaSemana = "Miércoles";
+                break;  
+            case 4:
+                diaSemana = "Jueves";
+                break;  
+            case 5:
+                diaSemana = "Viernes";
+                break;  
+            case 6:
+                diaSemana = "Sábado";
+                break;  
+            case 7:
+                diaSemana = "Domingo";
+                break;     
+            default: 
+                diaSemana = "Día no válido";
+            
+            
+            }
+                
+        System.out.println("El día de la semana es: " + diaSemana);  
+        
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Número 1: ");
+        double a = sc.nextDouble();
+
+        System.out.print("Operación (+, -, *, /): ");
+        char op = sc.next().charAt(0);
+
+        System.out.println("Número 2: ");
+        double b = sc.nextDouble();
+
+        double resultado;
+        switch (op) {
+            case '+':
+                resultado = a + b;
+                break;
+            case '-':
+                resultado = a - b;
+                break;
+            case '*':
+                resultado = a * b;
+                break;
+            case '/':
+                if (b != 0) {
+                    resultado = a / b;
+                } 
+                else {
+                    System.out.println("Error: División por cero");
+                    return;
+                }
+                break;
+            default:
+                System.out.println("Operación no válida");
+                return;
         }
+        System.out.println("Resultado: " + resultado);
+        sc.close();
+        
+        
+       for (int i = 0; i <= 20; i+=2) {
+        if (i % 2 == 0) {
+
+            System.out.println("Iteración " + i);
+        }  
+    */  
+        System.out.println("De qué número quieres la tabla?");
+        Scanner sc = new Scanner(System.in);
+        int numero = sc.nextInt();
+        System.out.println("Tabla del " + numero);
+        for (int i = 1; i <= 10; i++) {
+            System.out.println(numero + " x " + i + " = " + (numero * i));
+        sc.close();
+        }
+    }   
+
     }
-}
+        
+        
+
