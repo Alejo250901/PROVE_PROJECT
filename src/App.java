@@ -192,7 +192,7 @@ public class App {
 
             System.out.println("Iteración " + i);
         }  
-    */  
+      
         System.out.println("De qué número quieres la tabla?");
         Scanner sc = new Scanner(System.in);
         int numero = sc.nextInt();
@@ -200,10 +200,86 @@ public class App {
         for (int i = 1; i <= 10; i++) {
             System.out.println(numero + " x " + i + " = " + (numero * i));
         sc.close();
+
+        
+    
         }
+       for (int fila = 1; fila <= 4; fila++){
+        for (int col = 1; col <= 4; col++){
+            System.out.print("* ");
+        }
+        System.out.println();
+       }
+      for (int i = 1; i <= 10; i++){
+        if (i==5) break;
+        System.out.println(i);
+      }
+      for (int i = 1; i<=10;i++){
+        if (i % 2 == 0) continue;
+        System.out.println(i);
+      }
+     int contador = 1;
+     while (contador <= 5){
+        System.out.println("Vuelta número " + contador);
+        contador++;
+     }
+    Scanner sc = new Scanner (System.in);
+    int edad = -1;
+    while (edad < 0 || edad > 120){
+        System.out.println("Ingresa tu edad (0-120): ");
+        edad = sc.nextInt();
+        if (edad < 0 || edad > 120){
+            System.out.println("Edad invalida, intenta de nuevo.");
+
+        }
+    Scanner sc = new Scanner (System.in);
+    int opcion;
+
+    do {
+        System.out.println("\nMenú");
+        System.out.println("1. Saludar");
+        System.out.println("2. Despedirse");
+        System.out.println("3. Quedarse");
+        System.out.println("Opción ");
+        opcion = sc.nextInt();
+        
+        
+        switch (opcion){
+            case 1:
+                System.out.print("Hola");
+                break;
+            case 2:
+                System.out.print("Chao");
+                break;
+            case 3:
+                System.out.print("Quedate por favor");
+                break;
+            default:
+                System.out.println("Opción invalida");
+
+    
+            }
+    } while (opcion != 0);
+    System.out.println("Programa finalizado");
+    */
+   int [] notas = new int[5];
+
+   notas [0]=85;
+   notas [1]=90;
+   notas [2]=78;
+   notas [3]=92;
+   notas [4]=88;
+
+   int [] edades = {18,20, 22, 19, 21};
+   System.out.println(notas[0]);
+
+   for (int i=0; i < notas.length; i++){
+    System.out.println("Nota " + (i+1) + ": " + notas [i]);
+    
+   }
+    }
     }   
 
-    }
         
         
 
