@@ -261,7 +261,7 @@ public class App {
             }
     } while (opcion != 0);
     System.out.println("Programa finalizado");
-    */
+    
    int [] notas = new int[5];
 
    notas [0]=85;
@@ -275,10 +275,31 @@ public class App {
 
    for (int i=0; i < notas.length; i++){
     System.out.println("Nota " + (i+1) + ": " + notas [i]);
+   
+    for (int nota : notas){
+        System.out.println(nota);
+    
+    }*/
+    Scanner sc = new Scanner (System.in);
+    System.out.print("¿Cuántos estudiantes hay? ");
+    int n = sc.nextInt();
+
+    double[] notas = new double [n];
+    double suma = 0;
+
+    for (int i = 0; i < n; i++){
+        System.out.print("Nota del estudiante " + (i +1) + ": ");
+        notas [i] = sc.nextDouble();
+        suma += notas [i];
+
+        double promedio = suma / n;
+        System.out.println("Promedio del grupo: " + promedio);
+    
+        sc.close();
+    }
     
    }
-    }
-    }   
+    } 
 
         
         
