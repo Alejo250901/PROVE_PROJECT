@@ -1,12 +1,18 @@
 public class Punto {
     private int x,y;
-    public Punto(){
+    /*public Punto(){
         this.setX(0);
         this.setY(0);
-    }    
+    }    */
     public Punto(int x, int y){
         this.setX(x);
         this.setY(y);
+    }
+    public Punto(int xy){
+        this(xy, xy);   
+    }
+    public Punto(){
+        this(0, 0);
     }
     public double modulo(){
         return (double) Math.sqrt(this.x * this.x + this.y * this.y);

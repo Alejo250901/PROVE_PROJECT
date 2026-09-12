@@ -2,7 +2,21 @@
 
 public class App {
     public static void main(String[] args) throws Exception {
-        Libro libro1 = new Libro("El Principito", "Antoine de Saint-Exupéry", true);
+        Punto p1 = new Punto(2,3);
+        Punto p2 = new Punto(8);
+        Punto p3 = new Punto();
+        System.out.println(p1.getX());
+        System.out.println(p1.getY());
+        System.out.println(p2.getX());
+        System.out.println(p2.getY());
+        System.out.println(p3.getX());
+        System.out.println(p3.getY());
+
+
+
+
+
+        /*Libro libro1 = new Libro("El Principito", "Antoine de Saint-Exupéry", true);
         Libro libro2 = new Libro();
         libro2.setTitulo("Don Quijote de la Mancha");
         libro2.setAutor("Miguel de Cervantes");
@@ -36,7 +50,7 @@ public class App {
         vuelo1.desembarcar(15);
         vuelo1.desembarcar(20);
 
-        System.out.println("\n--- Estado final del vuelo 1 ---");    
+        System.out.println("\n--- Estado final del vuelo 1 ---");    */
 
 
 
