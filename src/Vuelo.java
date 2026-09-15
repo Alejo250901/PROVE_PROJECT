@@ -13,6 +13,12 @@ public class Vuelo {
 
         setOcupacion(ocupacion);
     }
+    public Vuelo(String numero, String origen, String destino) {
+        this.numero = numero;
+        this.origen = origen;
+        this.destino = destino;
+        this.ocupacion = 0;
+    }
     public Vuelo (){
 
     }

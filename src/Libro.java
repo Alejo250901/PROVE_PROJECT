@@ -3,9 +3,16 @@ public class Libro {
     private String autor;
     private boolean disponible;
 
+    // Constructor vacío
     public Libro(){
         this.disponible = true;
     }
+    public Libro(String titulo, String autor){
+        this.titulo = titulo;
+        this.autor = autor;
+        this.disponible = true;
+    }
+    // Constructor con parámetros
     public Libro(String titulo, String autor, boolean disponible){
         setTitulo(titulo);
         this.autor = autor;
